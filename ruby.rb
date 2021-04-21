@@ -1,4 +1,4 @@
-def burble_sort(arr)
+def bubble_sort(arr)
   len = 0
   while len < arr.length
     (arr.length - 1).times do |i|
@@ -9,9 +9,9 @@ def burble_sort(arr)
   arr
 end
 
-p burble_sort([9, 8, 7, 6, 5, 4, 3, 2, 1, 3, 4, 5, 6, 7, 8])
+p bubble_sort([9, 8, 7, 6, 5, 4, 3, 2, 1, 3, 4, 5, 6, 7, 8])
 
-def burble_sort_by(arr)
+def bubble_sort_by(arr)
   len = 0
   while len < arr.length
     (arr.length - 1).times do |i|
@@ -23,4 +23,4 @@ def burble_sort_by(arr)
   arr
 end
 
-p burble_sort_by(%w[hi hello hey h]) { |left, right| left.length - right.length }
+p bubble_sort_by(%w[hi hello hey h]) { |left, right| left.length - right.length }
