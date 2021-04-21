@@ -23,9 +23,9 @@ def burble_sort_by(arr)
     (arr.length - 1).times do |i|
       sort_by = yield(arr[i], arr[i + 1])
       if sort_by.positive?
-          temp = arr[i]
-          arr[i] = arr[i + 1]
-          arr[i + 1] = temp
+        temp = arr[i]
+        arr[i] = arr[i + 1]
+        arr[i + 1] = temp
       end
     end
     len += 1
