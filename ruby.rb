@@ -1,7 +1,7 @@
 def burble_sort(arr)
   len = 0
   while len < arr.length
-    (arr.length-1).times do |i|
+    (arr.length - 1).times do |i|
       if arr[i] > arr[i + 1]
         temp = arr[i]
         arr[i] = arr[i + 1]
@@ -20,7 +20,7 @@ burble_sort(p)
 def burble_sort_by(arr)
   len = 0
   while len < arr.length
-    (arr.length-1).times do |i|
+    (arr.length - 1).times do |i|
       sort_by = yield(arr[i], arr[i + 1])
       if sort_by.positive?
           temp = arr[i]
