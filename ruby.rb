@@ -33,4 +33,4 @@ def burble_sort_by(arr)
   return arr
 end
 
-p burble_sort_by(["hi","hello","hey"]) { |left, right| left.length - right.length }
+p burble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
