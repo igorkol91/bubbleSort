@@ -1,10 +1,10 @@
 # bubbleSort
 
-> This project shows sorting algorithms of integer arrays and string arrays
+> This project shows our enumerable metods
 
-![Screenshot](./big-sc.png)
+![Screenshot](./big-sc1.png)
 
-This is our 1st ruby project in microverse
+This is our 2nd ruby project in microverse
 
 ## Built With
 
@@ -12,13 +12,13 @@ This is our 1st ruby project in microverse
 
 
 ## Live Demo
-https://replit.com/@vikitaotiz/Bubble-Sort-1#main.rb
+
 
 
 ## Getting Started
 
 1. Clone the project 
-  https://github.com/igorkol91/bubbleSort/tree/development
+  https://github.com/igorkol91/bubbleSort/tree/development1
   
 2. Then open https://replit.com/languages/ruby
 
