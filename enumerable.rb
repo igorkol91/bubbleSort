@@ -2,10 +2,10 @@ module Enumerable
   ## my_each method
   def my_each
     return self unless block_given?
-    
+
     arr = self
     for i in arr
-        yield(i)
+      yield(i)
     end
   end
 
@@ -16,8 +16,8 @@ module Enumerable
     arr = self
     i = 0
     until i >= arr.length
-        yield(arr[i], i)
-        i += 1
+      yield(arr[i], i)
+      i += 1
     end
   end
 
@@ -44,7 +44,7 @@ module Enumerable
     return unless block_given?
 
     arr = self
-    arr.my_each { |i| return false if !yield(i) }
+    arr.my_each { |i| return false unless yield(i) }
     true
   end
 
@@ -53,13 +53,13 @@ module Enumerable
     return unless block_given?
 
     arr = self
-    arr.my_each { |i| return false if !yield(i) }
+    arr.my_each { |i| return false unless yield(i) }
     true
   end
 
   ## my_count method
   def my_count
-    return unless  block_given?
+    return unless block_given?
 
     arr = self
     counter = 0
@@ -102,7 +102,7 @@ puts([2, 5, 6, 7].my_each { |x| x })
 
 ## my_each_index
 puts '---- my_each_index ----'
-puts([2, 5, 6, 7].my_each_with_index { |x, i| puts "#{i.to_s} : #{x.to_s}" })
+puts([2, 5, 6, 7].my_each_with_index { |x, i| puts "#{i} : #{x}" })
 
 ## my_select
 puts '---- my_select ----'
