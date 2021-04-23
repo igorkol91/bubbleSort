@@ -135,4 +135,4 @@ puts ([2, 5, 7, 4, 2].my_map { |i| i + 8 })
 
 ## my_inject and multiply_els
 puts '---- multiply_els ----'
-puts ([2, 4, 5].multiply_els { |x, y| x * y })
+puts([2, 4, 5].multiply_els { |x, y| x * y })
