@@ -78,11 +78,11 @@ module Enumerable
   end
 
   ## my_inject method
-  def my_inject
+  def my_inject(&factor)
     return self unless block_given?
 
     arr = self
-    arr.my_each
+    arr.my_each { |x| factor.call(x) }
   end
 
   ## multiply_els method
@@ -127,6 +127,10 @@ puts([2, 5, 6, 7].my_count { |x| x })
 ## my_map method
 puts '---- my_map ----'
 puts([2, 5, 7, 4, 2].my_map { |i| i + 8 })
+
+## my_inject method
+puts '---- my_count ----'
+puts([2, 5, 6, 7].my_count { |x| x })
 
 ## my_inject and multiply_els
 puts '---- multiply_els ----'
