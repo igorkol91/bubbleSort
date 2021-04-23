@@ -82,7 +82,7 @@ module Enumerable
     return self unless block_given?
 
     arr = self
-    arr.my_each { |i| yield(i) }
+    arr.my_each
   end
 
   ## multiply_els method
